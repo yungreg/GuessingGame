@@ -2,7 +2,8 @@
 *todo: Display a message to the user asking them to guess the secret number.
 *todo: Display a prompt for the user's guess.
 *todo: Take the user's guess as input and save it as a variable.
-todo: Display the user's guess back to the screen.
+*todo: Display the user's guess back to the screen.
+^note: console.readline will pause the function! 
 */
 
 using System;
@@ -15,10 +16,11 @@ namespace GuessingGame
         {
             Console.WriteLine("Hello user! Guess that secret number, n3rd.");
             Console.Write("What's your guess? input it here:");
-            Console.ReadLine();
-            int UserAnswer = Console.ReadLine();
+            // Console.ReadLine();
+            string UserAnswer = Console.ReadLine();
 
             Console.Write(UserAnswer);
+            // Console.ReadLine();
         }
     }
 }
